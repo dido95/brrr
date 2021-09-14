@@ -1,0 +1,14 @@
+.vs-event-not-available, .vs-event-fillingfast, .vs-event-available {
+  border: 1px solid $green !important;
+  background-color: rgba(39, 145, 18,0.4) !important;
+  color:#000 !important;
+
+  &.calendar-active { 
+    background-color: $green-dark !important;
+    color:#fff !important;
+  }
+}
+
+.calendar-inner{
+  padding: 50px 20px !important;
+}

@@ -1,0 +1,77 @@
+@import "mixin";
+@import "root";
+@import "header";
+@import "banner";
+@import "type";
+@import "card";
+@import "micro-settings";
+@import "owl";
+@import "faq";
+@import "calendar";
+@import "blog";
+
+@media (max-width: 992px) {
+  .custom-sticky-top {
+    ul.nav {
+      flex-wrap: nowrap !important;
+      overflow: scroll;
+    }
+    ul.nav-sticky-top {
+      display: none !important;
+      bottom: 0;
+      width: 100%;
+      justify-content: space-between !important;
+      background: #0d1f20;
+      left: 0;
+      z-index: 99;
+      padding: 5px 10px;
+      &.active {
+        position: fixed;
+        display: flex !important;
+      }
+    }
+
+    .btn-lg {
+      padding: 0.2rem 1.5rem;
+      font-size: calc(1rem + 0.3vw);
+      line-height: 1.5;
+      border-radius: 0.2rem;
+    }
+  }
+
+}
+
+.position-sticky {
+  top: 0;
+  z-index: 9;
+  position: sticky;
+}
+
+footer {
+  position: relative;
+  z-index: 0;
+}
+
+@media (max-width: 992px) {
+  footer {
+    &.active {
+      margin-bottom: 4rem;
+      & + .iframe-banner {
+        bottom: -100px;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+
+.custom-form{
+  label{
+    font-weight: 600;
+    font-size:80%; 
+  }
+  .form-control{
+    padding: 2px 5px;
+    font-size: 12px; 
+  }
+} 

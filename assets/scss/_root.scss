@@ -1,0 +1,18 @@
+:root{
+  --light-org:#e79f74;
+  --light-blu:#5ecfdf;
+  --light-grn:#cec9a6;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.border-bottom-lg-0 {
+  @media (min-width: 992px) {
+    border-bottom: none !important;
+  }
+}   
